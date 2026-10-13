@@ -1,0 +1,53 @@
+{
+  "name": "top-nav",
+  "version": "1.0.0",
+  "description": "Minimal horizontal navigation bar with configurable links and active-section highlighting.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Georges Cubas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shagshag/quartz-top-nav"
+  },
+  "keywords": [
+    "quartz",
+    "quartz-plugin",
+    "navigation",
+    "component"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "sideEffects": false,
+  "quartz": {
+    "name": "top-nav",
+    "displayName": "Top Navigation",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "links": []
+    },
+    "components": {
+      "TopNav": {
+        "displayName": "Top Navigation",
+        "defaultPosition": "header",
+        "defaultPriority": 10
+      }
+    }
+  }
+}
